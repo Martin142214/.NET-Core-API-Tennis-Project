@@ -21,15 +21,6 @@ namespace VTDataAccessLayer.Repositories.ImplementedRepositories
             _repository = repository;
         }
 
-        public IEnumerable<Player> GetAllPlayersTakingPartInTournament(Expression<Func<Player, bool>> filter = null)
-        {
-            if (filter != null)
-            {
-                DbSet.Where(filter).Include(x => x.PlayersTournament).ThenInclude(y=>y.Tournament);
-            }
-            return DbSet.Include(x => x.PlayersTournament).ThenInclude(y=>y.Tournament);
-        }
-
         public Player GetAllTournamentsOfPlayer(Guid id)
         {
             var result = DbSet.Include(u => u.PlayersTournament)
