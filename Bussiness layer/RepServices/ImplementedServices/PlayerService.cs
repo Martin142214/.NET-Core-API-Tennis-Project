@@ -65,6 +65,7 @@ namespace Bussiness_layer.RepServices.ImplementedServices
             return _mapper.Map<PlayerAuthModel>(result);
         }
 
+
         public PlayerModel GetAllTournamentsOfPlayer(Guid id)
         {
             var player = _repository.GetAllTournamentsOfPlayer(id);

@@ -33,7 +33,7 @@ namespace Bussiness_layer.RepServices
         {
             await _repository.DeleteAndSaveAsync(id);
         }
-        //help
+        
         public IEnumerable<BaseModel> GetAll(Expression<Func<BaseModel, bool>> filter = null)
         {
             var obj = _mapper.Map<Expression<Func<BaseEntity, bool>>>(filter);
