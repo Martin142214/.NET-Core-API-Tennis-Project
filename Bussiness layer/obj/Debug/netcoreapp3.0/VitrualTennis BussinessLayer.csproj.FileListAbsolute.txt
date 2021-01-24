@@ -1,0 +1,12 @@
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\bin\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.deps.json
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\bin\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.dll
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\bin\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.pdb
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.dll
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.pdb
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.csprojAssemblyReference.cache
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.AssemblyInfoInputs.cache
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.AssemblyInfo.cs
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.csproj.CopyComplete
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.dll
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.pdb
+D:\.Net core project\VirtualTennisApplication\Bussiness layer\obj\Debug\netcoreapp3.0\VitrualTennis BussinessLayer.csproj.CoreCompileInputs.cache
