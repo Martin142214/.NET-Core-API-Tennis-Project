@@ -17,6 +17,7 @@ namespace Bussiness_layer.RepServices.Interfaces
         Task Create(PlayerCreateModel model);
         Task Update(PlayerEditModel model);
         Task Delete(Guid id);
+        PlayerModel GetAllTournamentsOfPlayer(Guid id);
         PlayerAuthModel GetUserByName(string name);
         Task TakePartInTournament(Guid playerId, Guid tournamentId);
         Task QuitTournament(Guid playerId, Guid tournamentId);

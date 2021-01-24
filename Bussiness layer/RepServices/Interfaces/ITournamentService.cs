@@ -15,5 +15,6 @@ namespace Bussiness_layer.RepServices.Interfaces
         Task Delete(Guid id);
         TournamentModel GetById(Guid id);
         Task Update(TournamentEditModel model);
+        TournamentModel GetAllPlayersOfTournament(Guid id);
     }
 }
