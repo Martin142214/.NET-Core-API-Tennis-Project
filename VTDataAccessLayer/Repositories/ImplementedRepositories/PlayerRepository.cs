@@ -30,9 +30,10 @@ namespace VTDataAccessLayer.Repositories.ImplementedRepositories
             return DbSet.Include(x => x.PlayersTournament).ThenInclude(y=>y.Tournament);
         }
 
-        public Player GetPlayer(Guid id)
+        public Player GetAllTournamentsOfPlayer(Guid id)
         {
-            var result = DbSet.Include(x => x.PlayersTournament).ThenInclude(y => y.Player)
+            var result = DbSet.Include(u => u.PlayersTournament)
+                .ThenInclude(bu => bu.Tournament)
                 .FirstOrDefault(x => x.ID == id);
 
             return result;
