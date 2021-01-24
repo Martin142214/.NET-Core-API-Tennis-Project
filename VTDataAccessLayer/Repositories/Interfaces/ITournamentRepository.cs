@@ -7,6 +7,6 @@ namespace Bussiness_layer.Repositories.Interfaces
 {
     public interface ITournamentRepository : IBaseRepository<Tournament>
     {
-
+        Tournament GetAllPlayersOfTournament(Guid id);
     }
 }
