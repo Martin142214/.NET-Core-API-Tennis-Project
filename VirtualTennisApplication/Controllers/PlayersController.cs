@@ -71,7 +71,7 @@ namespace VirtualTennisApplication.Controllers
         [HttpGet("{playerId}/tournaments")]
         public IActionResult ShowTournamentsPlayed(Guid playerId)
         {
-            var player = _playerService.GetById(playerId);
+            var player = _playerService.GetAllTournamentsOfPlayer(playerId);
             if (player == null)
             {
                 return NotFound();
@@ -82,7 +82,7 @@ namespace VirtualTennisApplication.Controllers
         [HttpPost("{playerId}/tournaments/{tournamentId}")]
         public async Task<IActionResult> TakePartInTournament(Guid playerId, Guid tournamentId)
         {
-            var player = _playerService.GetById(playerId);
+            var player = _playerService.GetAllTournamentsOfPlayer(playerId);
             var tournament = _tournamentService.GetById(tournamentId);
 
             if (player == null || tournament == null)
@@ -95,10 +95,10 @@ namespace VirtualTennisApplication.Controllers
                 return BadRequest();
             }
 
-            player.tournaments.Add(tournament);
-            tournament.players.Add(player);
+            //player.tournaments.Add(tournament);
+            //tournament.players.Add(player);
 
-            await _playerService.TakePartInTournament(playerId, tournamentId);
+            await _playerService.TakePartInTournament(player.Id, tournament.Id);
 
             return Ok(player.tournaments);
         }
@@ -106,7 +106,7 @@ namespace VirtualTennisApplication.Controllers
         [HttpDelete("{playerId}/tournaments/{tournamentId}")]
         public async Task<IActionResult> QuitTournament(Guid playerId, Guid tournamentId)
         {
-            var player = _playerService.GetById(playerId);
+            var player = _playerService.GetAllTournamentsOfPlayer(playerId);
             var tournament = _tournamentService.GetById(tournamentId);
 
             if (player == null || tournament == null)
@@ -114,13 +114,13 @@ namespace VirtualTennisApplication.Controllers
                 return NotFound("Player or tournament is not found");
             }
 
-            if (player.tournaments.Any(b => b.Id == tournamentId))
+            if (!player.tournaments.Any(b => b.Id == tournamentId))
             {
                 return BadRequest();
             }
 
-            player.tournaments.Remove(tournament);
-            tournament.players.Remove(player);
+            //player.tournaments.Remove(tournament);
+            //tournament.players.Remove(player);
 
             await _playerService.QuitTournament(playerId, tournamentId);
 

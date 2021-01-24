@@ -28,7 +28,7 @@ namespace VirtualTennisApplication.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = PlayerRolesConst.MainPlayer)]
+        //[Authorize(Roles = PlayerRolesConst.MainPlayer)]
         public IActionResult GetAll()
         {
             var result = _tournamentService.GetAll();
@@ -82,9 +82,9 @@ namespace VirtualTennisApplication.Controllers
         }
 
         [HttpGet("{tournamentId}/players")]
-        public IActionResult GetAllPlayersInTournament(Guid tournamentId)
+        public IActionResult GetAllPlayersOfTournament(Guid tournamentId)
         {
-            var tournament = _tournamentService.GetById(tournamentId);
+            var tournament = _tournamentService.GetAllPlayersOfTournament(tournamentId);
             if (tournament == null)
             {
                 return NotFound();
