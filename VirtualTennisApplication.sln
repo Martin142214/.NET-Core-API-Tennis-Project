@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VirtualTennisApplication", "VirtualTennisApplication\VirtualTennisApplication.csproj", "{D6327A3E-4EE4-4059-9163-904B18D8733B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VitrualTennis BussinessLayer", "Bussiness layer\VitrualTennis BussinessLayer.csproj", "{84BF477E-9BAB-45B9-8105-4F4CCDFE23B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VTDataAccessLayer", "VTDataAccessLayer\VTDataAccessLayer.csproj", "{8FCAF8A9-99FC-4453-B08B-5841290CD8CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6327A3E-4EE4-4059-9163-904B18D8733B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6327A3E-4EE4-4059-9163-904B18D8733B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6327A3E-4EE4-4059-9163-904B18D8733B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6327A3E-4EE4-4059-9163-904B18D8733B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84BF477E-9BAB-45B9-8105-4F4CCDFE23B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84BF477E-9BAB-45B9-8105-4F4CCDFE23B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84BF477E-9BAB-45B9-8105-4F4CCDFE23B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84BF477E-9BAB-45B9-8105-4F4CCDFE23B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCAF8A9-99FC-4453-B08B-5841290CD8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCAF8A9-99FC-4453-B08B-5841290CD8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCAF8A9-99FC-4453-B08B-5841290CD8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCAF8A9-99FC-4453-B08B-5841290CD8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {552AB6E8-5F86-4207-8F8A-912A83DCBCC7}
+	EndGlobalSection
+EndGlobal
