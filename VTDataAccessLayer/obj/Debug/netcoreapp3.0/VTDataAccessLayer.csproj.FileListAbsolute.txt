@@ -1,0 +1,12 @@
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.deps.json
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.runtimeconfig.json
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.runtimeconfig.dev.json
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.dll
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\bin\Debug\netcoreapp3.0\VTDataAccessLayer.pdb
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.AssemblyInfoInputs.cache
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.AssemblyInfo.cs
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.dll
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.pdb
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.csprojAssemblyReference.cache
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.csproj.CoreCompileInputs.cache
+D:\.Net core project\VirtualTennisApplication\VTDataAccessLayer\obj\Debug\netcoreapp3.0\VTDataAccessLayer.genruntimeconfig.cache
