@@ -65,6 +65,13 @@ namespace Bussiness_layer.RepServices.ImplementedServices
             return _mapper.Map<PlayerAuthModel>(result);
         }
 
+        public PlayerModel GetAllTournamentsOfPlayer(Guid id)
+        {
+            var player = _repository.GetAllTournamentsOfPlayer(id);
+
+            return _mapper.Map<PlayerModel>(player);
+        }
+
         public async Task TakePartInTournament(Guid playerId, Guid tournamentId)
         {
             await _repository.TakePartInTournament(playerId, tournamentId);

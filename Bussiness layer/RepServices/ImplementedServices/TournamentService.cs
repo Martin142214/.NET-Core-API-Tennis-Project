@@ -57,5 +57,12 @@ namespace Bussiness_layer.RepServices.ImplementedServices
             var obj = _mapper.Map<Tournament>(model);
             await _repository.UpdateAndSaveAsync(obj);
         }
+
+        public TournamentModel GetAllPlayersOfTournament(Guid id)
+        {
+            var players = _repository.GetAllPlayersOfTournament(id);
+
+            return _mapper.Map<TournamentModel>(players);
+        }
     }
 }
