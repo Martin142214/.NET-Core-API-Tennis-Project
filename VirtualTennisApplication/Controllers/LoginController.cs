@@ -29,7 +29,7 @@ namespace VirtualTennisApplication.Controllers
             var token = await _authService.Authenticate(model);
             if (token == null)
             {
-                return BadRequest("Invalid email or password");
+                return BadRequest("Invalid Name or AuthCode");
             }
 
             return Ok(token);

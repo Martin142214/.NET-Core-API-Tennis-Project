@@ -36,7 +36,7 @@ namespace VirtualTennisApplication.Controllers
             return Ok(result);
         }
         [HttpGet("{id}")]
-        [Authorize(Roles = PlayerRolesConst.MainPlayer)]
+        //[Authorize(Roles = PlayerRolesConst.MainPlayer)]
         public IActionResult GetPlayerById(Guid id)
         {
             var result = _playerService.GetById(id);
@@ -47,21 +47,21 @@ namespace VirtualTennisApplication.Controllers
             return Ok(result);
         }
         [HttpPost]
-        [Authorize(Roles = PlayerRolesConst.MainPlayer)]
+        //[Authorize(Roles = PlayerRolesConst.MainPlayer)]
         public async Task<IActionResult> Create(PlayerCreateModel model)
         {
             await _playerService.Create(model);
             return Ok();
         }
         [HttpPut]
-        [Authorize(Roles = PlayerRolesConst.MainPlayer)]
+        //[Authorize(Roles = PlayerRolesConst.MainPlayer)]
         public async Task<IActionResult> Update(PlayerEditModel model)
         {
             await _playerService.Update(model);
             return Ok();
         }
         [HttpDelete]
-        [Authorize(Roles = PlayerRolesConst.MainPlayer)]
+        //[Authorize(Roles = PlayerRolesConst.MainPlayer)]
         public async Task<IActionResult> Delete(Guid id)
         {
             await _playerService.Delete(id);
@@ -100,7 +100,7 @@ namespace VirtualTennisApplication.Controllers
 
             await _playerService.TakePartInTournament(player.Id, tournament.Id);
 
-            return Ok(player.tournaments);
+            return Ok();
         }
 
         [HttpDelete("{playerId}/tournaments/{tournamentId}")]
